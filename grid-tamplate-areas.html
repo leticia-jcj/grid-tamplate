@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQ</title>
+    <style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        .container {
+            height: 80vh;
+            width: 190vh;
+            display: grid;
+            border: 1px solid red;
+            grid-template-areas:
+                "header header header header header"
+                "sidebar content-1 content-1 content-1 content-1"
+                "sidebar content-2 content-2 content-3 content-3"
+                "footer footer footer footer footer";
+            gap: 5px;
+        }
+
+        .div {
+            border: 2px solid black;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .content-1 {
+            grid-area: content-1;
+        }
+        .content-2 {
+            grid-area: content-2;
+        }
+        .content-3 {
+            grid-area: content-3;
+        }
+        .footer {
+            grid-area: footer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div header">header</div>
+        <div class="div sidebar">sidebar</div>
+        <div class="div content-1">content-1</div>
+        <div class="div content-2">content-2</div>
+        <div class="div content-3">content-3</div>
+        <div class="div footer">footer</div>
+    </div>
+</body>
+</html>

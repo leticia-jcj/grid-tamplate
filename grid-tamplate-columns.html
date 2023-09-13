@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-columns: 
+              minmax(100px,1fr) 
+              minmax(400px, 1fr); */
+        
+        }
+
+        .div {
+
+        }
+
+        .div-1 {
+            background-color: yellow;
+        }
+
+        .div-2 {
+            background-color: rgb(216, 25, 219);
+        }
+
+        .div-3 {
+            background-color: rgb(30, 176, 229);
+        }
+
+        .div-4 {
+            background-color: rgb(52, 189, 84);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div div-1">1</div>
+        <div class="div div-2">2</div>
+        <div class="div div-3">3</div>
+        <div class="div div-4">4</div>
+    </div>
+</body>
+</html>
