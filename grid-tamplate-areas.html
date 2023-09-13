@@ -6,14 +6,26 @@
     <title>HQ</title>
     <style>
     
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-blue: #0069fe;
+            --color-gray: #a5a7ab;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+        }
+
         .container {
             height: 80vh;
-            width: 190vh;
+            width: 150vh;
             display: grid;
             border: 1px solid red;
             grid-template-areas:
@@ -30,24 +42,33 @@
 
         .header {
             grid-area: header;
+            background-color: var(--color-blue);
         }
+
         .sidebar {
             grid-area: sidebar;
+            background-color: #67a4ff;
         }
-        .sidebar {
-            grid-area: sidebar;
-        }
+
         .content-1 {
             grid-area: content-1;
+            background-color: var(--color-gray);
         }
+
         .content-2 {
             grid-area: content-2;
+            background-color: var(--color-gray);
+
         }
+
         .content-3 {
             grid-area: content-3;
+            background-color: var(--color-gray);
         }
+
         .footer {
             grid-area: footer;
+            background-color: var(--color-blue);
         }
 
 
